@@ -1,4 +1,6 @@
-# Suraj Kumar - Portfolio Website
+# Suraj Kumar – Portfolio Website
+
+[![Website](https://img.shields.io/badge/Live%20Portfolio-Visit%20Now-0db7ed?logo=internet-explorer&logoColor=white&style=for-the-badge)](https://surajkr97.github.io/suraj-portfolio/)
 
 ## About
 
