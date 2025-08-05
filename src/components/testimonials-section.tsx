@@ -10,21 +10,21 @@ const testimonials = [
     author: "Project Mentor",
     role: "Senior Developer",
     rating: 5,
-    image: "/image-uploads/0649f635-f5ec-45f7-ad06-d4aa8e025d1b.png"
+    image: import.meta.env.BASE_URL + "image-uploads/0649f635-f5ec-45f7-ad06-d4aa8e025d1b.png"
   },
   {
     quote: "Excellent grasp of modern web technologies. Eager to learn, great at UI work, and always delivers on time.",
     author: "Internship Lead", 
     role: "Tech Lead",
     rating: 5,
-    image: "/image-uploads/93648f4b-ed7a-4b3e-9ea4-4ed78b5316b8.png"
+    image: import.meta.env.BASE_URL + "image-uploads/93648f4b-ed7a-4b3e-9ea4-4ed78b5316b8.png"
   },
   {
     quote: "Impressed by Suraj's problem-solving skills and attention to detail. A valuable team member for any project.",
     author: "Team Lead",
     role: "Senior Engineer", 
     rating: 5,
-    image: "/image-uploads/4ceeb241-4b17-4052-aa1d-0c1988632d44.png"
+    image: import.meta.env.BASE_URL + "image-uploads/4ceeb241-4b17-4052-aa1d-0c1988632d44.png"
   }
 ]
 

@@ -1,35 +1,47 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { ArrowRight, Download, Github, Linkedin, Mail, Phone } from "lucide-react"
-import { Button } from "@/components/ui/button"
+import { motion } from "framer-motion";
+import {
+  ArrowRight,
+  Download,
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 export function HeroSection() {
   const scrollToContact = () => {
-    const element = document.querySelector("#contact")
+    const element = document.querySelector("#contact");
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" })
+      element.scrollIntoView({ behavior: "smooth" });
     }
-  }
+  };
 
   const downloadResume = () => {
     // Create a download link for the resume
-    const link = document.createElement('a')
-    link.href = '/Suraj_Kumar_Resume.pdf'
-    link.download = 'Suraj_Kumar_Resume.pdf'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-  }
+    const link = document.createElement("a");
+
+    // Use the dynamic base URL to correctly link to the file
+    link.href = import.meta.env.BASE_URL + "Suraj_Kumar_Resume.pdf";
+
+    link.download = "Suraj_Kumar_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-24">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-24"
+    >
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-hero opacity-10 dark:opacity-5"></div>
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
           {/* Left Column - Text Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -49,7 +61,7 @@ export function HeroSection() {
                   Suraj Kumar
                 </span>
               </h1>
-              
+
               <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -66,9 +78,11 @@ export function HeroSection() {
               transition={{ delay: 0.6 }}
               className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-2xl"
             >
-              Passionate about building <strong>modern, secure, and high-performance</strong> web applications. 
-              Experienced in React, Express, MongoDB, and Tailwind CSS. Proven ability to build real-world 
-              applications with authentication, state management, and REST APIs.
+              Passionate about building{" "}
+              <strong>modern, secure, and high-performance</strong> web
+              applications. Experienced in React, Express, MongoDB, and Tailwind
+              CSS. Proven ability to build real-world applications with
+              authentication, state management, and REST APIs.
             </motion.p>
 
             <motion.p
@@ -77,8 +91,9 @@ export function HeroSection() {
               transition={{ delay: 0.7 }}
               className="text-lg text-muted-foreground"
             >
-              Strong communicator, fast learner, and a fan of <strong>clean, scalable code</strong>. 
-              Available for full-time or freelance opportunities.
+              Strong communicator, fast learner, and a fan of{" "}
+              <strong>clean, scalable code</strong>. Available for full-time or
+              freelance opportunities.
             </motion.p>
 
             {/* Action Buttons */}
@@ -88,15 +103,12 @@ export function HeroSection() {
               transition={{ delay: 0.8 }}
               className="flex flex-col sm:flex-row gap-4"
             >
-              <Button 
-                onClick={scrollToContact}
-                className="btn-hero group"
-              >
+              <Button onClick={scrollToContact} className="btn-hero group">
                 Get In Touch
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
-              
-              <Button 
+
+              <Button
                 onClick={downloadResume}
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
@@ -162,12 +174,15 @@ export function HeroSection() {
             >
               <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-glow">
                 <img
-                  src="/image-uploads/44e11119-e980-441a-9cb1-cfe3a5a10b65.png"
+                  src={
+                    import.meta.env.BASE_URL +
+                    "image-uploads/44e11119-e980-441a-9cb1-cfe3a5a10b65.png"
+                  }
                   alt="Suraj Kumar - Fullstack MERN Developer"
                   className="w-full h-full object-cover filter brightness-110 contrast-105 saturate-90 dark:brightness-90 dark:contrast-110"
                 />
               </div>
-              
+
               {/* Floating elements */}
               <motion.div
                 animate={{ rotate: 360 }}
@@ -184,5 +199,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }
