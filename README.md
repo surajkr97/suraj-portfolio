@@ -53,4 +53,4 @@ This project can be deployed on any static hosting service like Vercel, Netlify,
 - Phone: +91 7367089724
 - GitHub: [surajkr97](https://github.com/surajkr97)
 - LinkedIn: [surajkr97](https://linkedin.com/in/surajkr97)
-# suraj-protfolio
+# suraj-portfolio
