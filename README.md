@@ -2,6 +2,13 @@
 
 [![Website](https://img.shields.io/badge/Live%20Portfolio-Visit%20Now-0db7ed?logo=internet-explorer&logoColor=white&style=for-the-badge)](https://surajkr97.github.io/suraj-portfolio/)
 
+# Support My Work
+
+If you like my projects and want to support my open-source work, consider sponsoring me! Your support helps me dedicate more time to building useful projects.
+
+[![Sponsor](https://img.shields.io/badge/Sponsor-❤️-pink)](https://github.com/sponsors/surajkr97)
+
+
 ## About
 
 This is my personal portfolio website showcasing my skills, projects, and achievements as a Fullstack MERN Developer.
