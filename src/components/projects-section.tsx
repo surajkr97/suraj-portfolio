@@ -7,18 +7,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 
 const projects = [
   {
-    title: "RouterVault",
-    description: "A multi-page React app using React Router loaders, protected routes, GitHub user search integration, and localStorage-based auth.",
-    icon: Shield,
-    stack: ["React", "React Router", "Tailwind"],
-    features: ["Protected Routes", "GitHub Integration", "Local Storage Auth", "Route Loaders"],
-    github: "https://github.com/surajkr97/RouterVault",
-    live: "https://router-vault.vercel.app", 
-    gradient: "from-purple-200 to-pink-200 dark:from-purple-900/50 dark:to-pink-900/50"
+    title: "Voting App",
+    description: "Fullstack Voting App with candidate management, JWT auth, and real-time vote tracking along with Admin Pannel. 🗳️",
+    icon: Vote,
+    stack: ["React", "Tailwind", "Express", "MongoDB"],
+    features: ["JWT Authentication", "Real-time Tracking", "Role-based Access", "Secure Voting"],
+    github: "https://github.com/surajkr97/voting-fullStack",
+    live: "https://voting-fullstack.onrender.com/",
+    gradient: "from-blue-200 to-cyan-200 dark:from-blue-900/50 dark:to-cyan-900/50"
   },
   {
     title: "Live Cricket Score",
-    description: "A responsive app that shows live scores across all match formats with 3D hover cards, error handling, and optimized loading.",
+    description: "A responsive app that shows live scores across all match formats with 3D hover cards, error handling, and optimized loading. 🏏",
     icon: Zap,
     stack: ["React", "API Integration", "Tailwind"],
     features: ["Live Data", "3D Hover Effects", "Error Handling", "Responsive Design"],
@@ -27,15 +27,16 @@ const projects = [
     gradient: "from-green-200 to-emerald-200 dark:from-green-900/50 dark:to-emerald-900/50"
   },
   {
-    title: "Voting App",
-    description: "A secure online voting system with JWT-based authentication, real-time vote tracking, and role-based access for admin and users.",
-    icon: Vote,
-    stack: ["React", "Tailwind", "Express", "MongoDB"],
-    features: ["JWT Authentication", "Real-time Tracking", "Role-based Access", "Secure Voting"],
-    github: "https://github.com/surajkr97/voting-app",
-    live: "https://github.com/surajkr97/voting-app",
-    gradient: "from-blue-200 to-cyan-200 dark:from-blue-900/50 dark:to-cyan-900/50"
+    title: "RouterVault",
+    description: "A multi-page React app using React Router loaders, protected routes, GitHub user search integration, and localStorage-based auth. 🔐",
+    icon: Shield,
+    stack: ["React", "React Router", "Tailwind"],
+    features: ["Protected Routes", "GitHub Integration", "Local Storage Auth", "Route Loaders"],
+    github: "https://github.com/surajkr97/RouterVault",
+    live: "https://router-vault.vercel.app", 
+    gradient: "from-purple-200 to-pink-200 dark:from-purple-900/50 dark:to-pink-900/50"
   }
+  
 ]
 
 export function ProjectsSection() {
